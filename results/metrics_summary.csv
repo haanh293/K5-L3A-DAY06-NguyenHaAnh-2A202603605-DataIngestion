@@ -1,0 +1,7 @@
+strategy,split,n_total,hit1_count,hit1_fraction,hit1_rate,hit3_count,hit3_fraction,hit3_rate,filter_questions,filter_compliant_count,filter_compliant_fraction
+A,dev,15,5,5/15,0.3333,7,7/15,0.4667,3,2,2/3
+A,test,5,1,1/5,0.2,2,2/5,0.4,2,2,2/2
+B,dev,15,12,12/15,0.8,12,12/15,0.8,3,2,2/3
+B,test,5,5,5/5,1.0,5,5/5,1.0,2,2,2/2
+C,dev,15,12,12/15,0.8,12,12/15,0.8,3,3,3/3
+C,test,5,5,5/5,1.0,5,5/5,1.0,2,2,2/2

@@ -1,0 +1,248 @@
+{
+  "benchmark_name": "Web & HTTP API Standards Ingestion Benchmark (RFC 9111, RFC 9457, RFC 9309)",
+  "created_before_experiment": true,
+  "split_policy": "Stratified split by document and question type before any retrieval run: 15 dev (q01-q15) / 5 test (q16-q20), with 5 metadata-filter questions (3 dev, 2 test).",
+  "selection_criteria_pre_registered": {
+    "primary_metric": "dev Evidence Hit@3",
+    "tie_breakers": [
+      "dev Hit@1",
+      "manual chunk coherence average (/2)",
+      "manual grounding quality average (/2)",
+      "indexing time and storage footprint"
+    ]
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "In HTTP caching, what value does a cache treat a delta-seconds value as if it overflows or exceeds the greatest integer it can represent?",
+      "expected_answer": "The cache considers the value to be 2147483648 (2^31) or the greatest positive integer it can conveniently represent.",
+      "gold_source_id": "rfc9111",
+      "gold_page": 6,
+      "evidence_quote": "the cache consider the value to be 2147483648 (2 31) or the greatest positive integer it can conveniently represent.",
+      "filter": null
+    },
+    {
+      "id": "q02",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "Under what circumstances is a shared cache allowed to store and reuse a response to a request that includes an Authorization header?",
+      "expected_answer": "Only when the response includes a Cache-Control response directive that explicitly permits shared caching (must-revalidate, public, or s-maxage) and the cache conforms to its requirements.",
+      "gold_source_id": "rfc9111",
+      "gold_page": 10,
+      "evidence_quote": "In this specification, the following response directives have such an effect: must-revalidate (Section 5.2.2.2), public (Section 5.2.2.9), and s-maxage (Section 5.2.2.10).",
+      "filter": null
+    },
+    {
+      "id": "q03",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "How does a cache handle a stored response whose Vary header field contains an asterisk (\"*\")?",
+      "expected_answer": "A stored response with a Vary header field value containing \"*\" always fails to match.",
+      "gold_source_id": "rfc9111",
+      "gold_page": 11,
+      "evidence_quote": "A stored response with a Vary header field value containing a member \"*\" always fails to match.",
+      "filter": null
+    },
+    {
+      "id": "q04",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "What is the priority order used by an HTTP cache to calculate a response's explicit freshness_lifetime?",
+      "expected_answer": "Use s-maxage if it is a shared cache; otherwise use max-age; otherwise use Expires minus Date; otherwise apply heuristic freshness if eligible.",
+      "gold_source_id": "rfc9111",
+      "gold_page": 13,
+      "evidence_quote": "If the cache is shared and the s-maxage response directive (Section 5.2.2.10) is present, use its value, or If the max-age response directive (Section 5.2.2.1) is present, use its value, or If the Expires response header field (Section 5.3) is present, use its value minus the value of the Date response header field",
+      "filter": null
+    },
+    {
+      "id": "q05",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "What is the status of the Pragma header field in RFC 9111, and why is \"Pragma: no-cache\" unreliable in HTTP responses?",
+      "expected_answer": "RFC 9111 deprecates Pragma; its meaning in responses was never specified, so it is not a reliable replacement for Cache-Control: no-cache in responses.",
+      "gold_source_id": "rfc9111",
+      "gold_page": 27,
+      "evidence_quote": "As a result, this specification deprecates Pragma. Note: Because the meaning of \"Pragma: no-cache\" in responses was never specified, it does not provide a reliable replacement for \"Cache-Control: no-cache\" in them.",
+      "filter": null
+    },
+    {
+      "id": "q06",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "What options does an HTTP cache have when it receives a 5xx Server Error response while attempting to validate a stored response?",
+      "expected_answer": "It can forward the 5xx response to the client or act as if the server failed to respond, serving a previously stored stale response (subject to Section 4.2.4 constraints) or retrying the validation request.",
+      "gold_source_id": "rfc9111",
+      "gold_page": 18,
+      "evidence_quote": "if a cache receives a 5xx (Server Error) response while attempting to validate a response, it can either forward this response to the requesting client or act as if the server failed to respond. In the latter case, the cache can send a previously stored response, subject to its constraints on doing so (see Section 4.2.4), or retry the validation request.",
+      "filter": null
+    },
+    {
+      "id": "q07",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "What media types are defined for JSON and XML serializations of HTTP problem details?",
+      "expected_answer": "\"application/problem+json\" for JSON and \"application/problem+xml\" for XML.",
+      "gold_source_id": "rfc9457",
+      "gold_page": 3,
+      "evidence_quote": "it uses the \"application/problem+json\" media type. Appendix B defines an equivalent XML format, which uses the \"application/problem+xml\" media type.",
+      "filter": null
+    },
+    {
+      "id": "q08",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "What default value is assumed when the \"type\" member is omitted from a problem details JSON object?",
+      "expected_answer": "Its value is assumed to be \"about:blank\".",
+      "gold_source_id": "rfc9457",
+      "gold_page": 6,
+      "evidence_quote": "When this member is not present, its value is assumed to be \"about:blank\".",
+      "filter": null
+    },
+    {
+      "id": "q09",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "When is the \"title\" member of a problem details object permitted to change between occurrences of the same problem type?",
+      "expected_answer": "It should not change from occurrence to occurrence except for localization (such as via proactive content negotiation).",
+      "gold_source_id": "rfc9457",
+      "gold_page": 7,
+      "evidence_quote": "It change from occurrence to occurrence of the problem, except for localization (e.g., using proactive content negotiation; see ).",
+      "filter": null
+    },
+    {
+      "id": "q10",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "What naming constraints apply to additional extension members on a problem details object so they can be serialized in formats other than JSON?",
+      "expected_answer": "Their names should start with a letter (ALPHA), consist of ALPHA, DIGIT, and \"_\", and be at least three characters long.",
+      "gold_source_id": "rfc9457",
+      "gold_page": 9,
+      "evidence_quote": "their names start with a letter (ALPHA, as per ) and comprise characters from ALPHA, DIGIT ( ), and \"_\" (so that it can be serialized in formats other than JSON), and they be three characters or longer.",
+      "filter": null
+    },
+    {
+      "id": "q11",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "How does a crawler handle multiple groups in robots.txt that match its product token, and what does it do if no group matches?",
+      "expected_answer": "It merges all matching groups into one combined group; if no group matches, it obeys the \"*\" user-agent group if present (otherwise no rules apply).",
+      "gold_source_id": "rfc9309",
+      "gold_page": 5,
+      "evidence_quote": "If there is more than one group matching the user-agent, the matching groups' rules be combined into one group and parsed according to Section 2.2.2. If no matching group exists, crawlers obey the group with a user-agent line with the \"*\" value, if present.",
+      "filter": null
+    },
+    {
+      "id": "q12",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "In robots.txt evaluation, if an \"allow\" rule and a \"disallow\" rule are equivalent in length and match a URI, which rule wins?",
+      "expected_answer": "The \"allow\" rule must be used.",
+      "gold_source_id": "rfc9309",
+      "gold_page": 6,
+      "evidence_quote": "If an \"allow\" rule and a \"disallow\" rule are equivalent, then the \"allow\" rule be used.",
+      "filter": null
+    },
+    {
+      "id": "q13",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "How long is a client advised not to use a cached version of a fetched file unless the resource is unreachable?",
+      "expected_answer": "Crawlers should not use the cached version of robots.txt for more than 24 hours unless the robots.txt file is unreachable.",
+      "gold_source_id": "rfc9309",
+      "gold_page": 9,
+      "evidence_quote": "Crawlers use the cached version for more than 24 hours, unless the robots.txt file is unreachable.",
+      "filter": {
+        "category": "web_crawling"
+      }
+    },
+    {
+      "id": "q14",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "When an unsafe HTTP request triggers cache invalidation for URIs in Location or Content-Location headers, when is that invalidation prohibited?",
+      "expected_answer": "A cache must not trigger invalidation if the origin of the URI to be invalidated differs from the origin of the target URI, to help prevent denial-of-service attacks.",
+      "gold_source_id": "rfc9111",
+      "gold_page": 19,
+      "evidence_quote": "However, a cache trigger an invalidation under these conditions if the origin ( ) of the URI to be invalidated differs from that of the target URI ( ). This helps prevent denial-of-service attacks.",
+      "filter": {
+        "category": "http_caching",
+        "year": 2022
+      }
+    },
+    {
+      "id": "q15",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "In the XML serialization format, how are extension arrays distinguished from extension objects?",
+      "expected_answer": "An element containing child elements represents an object, except elements containing only child elements named \"i\", which represent arrays.",
+      "gold_source_id": "rfc9457",
+      "gold_page": 14,
+      "evidence_quote": "Extension arrays and objects are serialized into the XML format by considering an element containing a child or children to represent an object, except for elements containing only one or more child elements named \"i\", which are considered arrays.",
+      "filter": {
+        "year": 2023
+      }
+    },
+    {
+      "id": "q16",
+      "split": "test",
+      "type": "truc_tiep",
+      "question": "Does the presence of a Set-Cookie response header field automatically prevent HTTP caches from storing and reusing a response?",
+      "expected_answer": "No; Set-Cookie does not inhibit caching, so servers must emit appropriate Cache-Control response headers if they want to prevent caching.",
+      "gold_source_id": "rfc9111",
+      "gold_page": 29,
+      "evidence_quote": "Note that the Set-Cookie response header field does not inhibit caching; a cacheable response with a Set-Cookie header field can be (and often is) used to satisfy subsequent requests to caches.",
+      "filter": null
+    },
+    {
+      "id": "q17",
+      "split": "test",
+      "type": "dieu_kien_ngoai_le",
+      "question": "How does the \"must-understand\" Cache-Control response directive interact with \"no-store\" when a cache understands the response status code?",
+      "expected_answer": "If a cache implements must-understand and understands and implements the status code's caching requirements, it should ignore the no-store directive.",
+      "gold_source_id": "rfc9111",
+      "gold_page": 23,
+      "evidence_quote": "When a cache that implements the must-understand directive receives a response that includes it, the cache ignore the no-store directive if it understands and implements the status code's caching requirements.",
+      "filter": null
+    },
+    {
+      "id": "q18",
+      "split": "test",
+      "type": "dien_dat_lai",
+      "question": "What kind of server information should problem details generators avoid exposing when providing links to error occurrence details?",
+      "expected_answer": "They should avoid exposing internal implementation details such as stack dumps that could leak sensitive server or data details.",
+      "gold_source_id": "rfc9457",
+      "gold_page": 10,
+      "evidence_quote": "Generators providing links to occurrence information are encouraged to avoid making implementation details such as a stack dump available through the HTTP interface, since this can expose sensitive details of the server implementation, its data, and so on.",
+      "filter": null
+    },
+    {
+      "id": "q19",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "How many consecutive HTTP redirects should a crawler follow when fetching robots.txt, and what happens if more redirects occur?",
+      "expected_answer": "Crawlers should follow at least five consecutive redirects (even across authorities); if more than five occur, crawlers may assume robots.txt is unavailable.",
+      "gold_source_id": "rfc9309",
+      "gold_page": 8,
+      "evidence_quote": "The crawlers follow at least five consecutive redirects, even across authorities (for example, hosts in the case of HTTP). If a robots.txt file is reached within five consecutive redirects, the robots.txt file be fetched, parsed, and its rules followed in the context of the initial authority. If there are more than five consecutive redirects, crawlers assume that the robots.txt file is unavailable.",
+      "filter": {
+        "category": "web_crawling"
+      }
+    },
+    {
+      "id": "q20",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "How should clients consuming problem details handle unrecognized extension members?",
+      "expected_answer": "Clients must ignore any extension members that they do not recognize so problem types can evolve safely.",
+      "gold_source_id": "rfc9457",
+      "gold_page": 8,
+      "evidence_quote": "Clients consuming problem details ignore any such extensions that they don't recognize; this allows problem types to evolve and include additional information in the future.",
+      "filter": {
+        "category": "http_error_handling",
+        "year": 2023
+      }
+    }
+  ]
+}

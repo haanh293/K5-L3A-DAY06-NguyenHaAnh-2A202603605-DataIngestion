@@ -1,0 +1,91 @@
+{
+  "by_strategy_split": [
+    {
+      "strategy": "A",
+      "split": "dev",
+      "n_total": 15,
+      "hit1_count": 5,
+      "hit1_fraction": "5/15",
+      "hit1_rate": 0.3333,
+      "hit3_count": 7,
+      "hit3_fraction": "7/15",
+      "hit3_rate": 0.4667,
+      "filter_questions": 3,
+      "filter_compliant_count": 2,
+      "filter_compliant_fraction": "2/3"
+    },
+    {
+      "strategy": "A",
+      "split": "test",
+      "n_total": 5,
+      "hit1_count": 1,
+      "hit1_fraction": "1/5",
+      "hit1_rate": 0.2,
+      "hit3_count": 2,
+      "hit3_fraction": "2/5",
+      "hit3_rate": 0.4,
+      "filter_questions": 2,
+      "filter_compliant_count": 2,
+      "filter_compliant_fraction": "2/2"
+    },
+    {
+      "strategy": "B",
+      "split": "dev",
+      "n_total": 15,
+      "hit1_count": 12,
+      "hit1_fraction": "12/15",
+      "hit1_rate": 0.8,
+      "hit3_count": 12,
+      "hit3_fraction": "12/15",
+      "hit3_rate": 0.8,
+      "filter_questions": 3,
+      "filter_compliant_count": 2,
+      "filter_compliant_fraction": "2/3"
+    },
+    {
+      "strategy": "B",
+      "split": "test",
+      "n_total": 5,
+      "hit1_count": 5,
+      "hit1_fraction": "5/5",
+      "hit1_rate": 1.0,
+      "hit3_count": 5,
+      "hit3_fraction": "5/5",
+      "hit3_rate": 1.0,
+      "filter_questions": 2,
+      "filter_compliant_count": 2,
+      "filter_compliant_fraction": "2/2"
+    },
+    {
+      "strategy": "C",
+      "split": "dev",
+      "n_total": 15,
+      "hit1_count": 12,
+      "hit1_fraction": "12/15",
+      "hit1_rate": 0.8,
+      "hit3_count": 12,
+      "hit3_fraction": "12/15",
+      "hit3_rate": 0.8,
+      "filter_questions": 3,
+      "filter_compliant_count": 3,
+      "filter_compliant_fraction": "3/3"
+    },
+    {
+      "strategy": "C",
+      "split": "test",
+      "n_total": 5,
+      "hit1_count": 5,
+      "hit1_fraction": "5/5",
+      "hit1_rate": 1.0,
+      "hit3_count": 5,
+      "hit3_fraction": "5/5",
+      "hit3_rate": 1.0,
+      "filter_questions": 2,
+      "filter_compliant_count": 2,
+      "filter_compliant_fraction": "2/2"
+    }
+  ],
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "dimensions": 384,
+  "cost_usd": 0.0
+}

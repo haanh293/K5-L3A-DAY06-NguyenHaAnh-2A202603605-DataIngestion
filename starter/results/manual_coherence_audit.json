@@ -1,0 +1,172 @@
+{
+  "annotator": "Nguyen Ha Anh (author; self-audit risk noted)",
+  "positions_n": 10,
+  "scores": {
+    "A": {
+      "distribution": {
+        "0": 3,
+        "1": 7,
+        "2": 0
+      },
+      "mean_out_of_2": 0.7
+    },
+    "B": {
+      "distribution": {
+        "0": 0,
+        "1": 1,
+        "2": 9
+      },
+      "mean_out_of_2": 1.9
+    },
+    "C": {
+      "distribution": {
+        "0": 0,
+        "1": 1,
+        "2": 9
+      },
+      "mean_out_of_2": 1.9
+    }
+  },
+  "items": [
+    {
+      "position_id": "pos01",
+      "document_id": "rfc9111",
+      "page": 5,
+      "anchor_phrase": "A \"shared cache\" is a cache that stores responses",
+      "chunk_id_A": "rfc9111_p05_c02",
+      "score_A": 1,
+      "rationale_A": "Starts mid-word ('ached response...') and cuts mid-sentence ('component o'); shared/private cache definitions are readable in the middle.",
+      "chunk_id_B": "rfc9111_p05_c02",
+      "score_B": 2,
+      "chunk_id_C": "rfc9111_p05_c02",
+      "score_C": 2,
+      "rationale_BC": "Starts at full sentence boundary and keeps complete shared/private cache definitions plus Section 1.1 intact."
+    },
+    {
+      "position_id": "pos02",
+      "document_id": "rfc9111",
+      "page": 6,
+      "anchor_phrase": "If a cache receives a delta-seconds value",
+      "chunk_id_A": "rfc9111_p06_c01",
+      "score_A": 1,
+      "rationale_A": "Begins cleanly at Section 1.2.2 heading but truncates mid-sentence right before 'it can conveniently represent.'",
+      "chunk_id_B": "rfc9111_p06_c01",
+      "score_B": 2,
+      "chunk_id_C": "rfc9111_p06_c01",
+      "score_C": 2,
+      "rationale_BC": "Keeps heading 1.2.2 and the entire delta-seconds overflow rule intact."
+    },
+    {
+      "position_id": "pos03",
+      "document_id": "rfc9111",
+      "page": 7,
+      "anchor_phrase": "A cache store a response to a request unless:",
+      "chunk_id_A": "rfc9111_p07_c02",
+      "score_A": 0,
+      "rationale_A": "Starts mid-phrase ('cache key.') and cuts Section 3 storage conditions mid-list ('see Section 5.2'), losing required clauses.",
+      "chunk_id_B": "rfc9111_p07_c01",
+      "score_B": 1,
+      "chunk_id_C": "rfc9111_p07_c01",
+      "score_C": 1,
+      "rationale_BC": "Introductory paragraphs are coherent, but the colon-introduced condition list of Section 3 begins in the next chunk (rfc9111_p07_c02)."
+    },
+    {
+      "position_id": "pos04",
+      "document_id": "rfc9111",
+      "page": 8,
+      "anchor_phrase": "3.1. Storing Header and Trailer Fields",
+      "chunk_id_A": "rfc9111_p08_c01",
+      "score_A": 1,
+      "rationale_A": "Includes Section 3.1 heading and Connection rule, then cuts mid-sentence ('require them to be removed').",
+      "chunk_id_B": "rfc9111_p08_c01",
+      "score_B": 2,
+      "chunk_id_C": "rfc9111_p08_c01",
+      "score_C": 2,
+      "rationale_BC": "Self-contained Section 3.1 intro and complete exception sentences."
+    },
+    {
+      "position_id": "pos05",
+      "document_id": "rfc9457",
+      "page": 3,
+      "anchor_phrase": "To address that shortcoming, this specification defines",
+      "chunk_id_A": "rfc9457_p03_c01",
+      "score_A": 1,
+      "rationale_A": "Covers purpose of problem details, then truncates mid-sentence in the 403 account credit example.",
+      "chunk_id_B": "rfc9457_p03_c01",
+      "score_B": 2,
+      "chunk_id_C": "rfc9457_p03_c01",
+      "score_C": 2,
+      "rationale_BC": "Complete Section 1 Introduction problem framing and 403 Forbidden example."
+    },
+    {
+      "position_id": "pos06",
+      "document_id": "rfc9457",
+      "page": 4,
+      "anchor_phrase": "3. The Problem Details JSON Object",
+      "chunk_id_A": "rfc9457_p04_c01",
+      "score_A": 0,
+      "rationale_A": "Mostly Section 2 BCP 14 boilerplate; cuts Section 3 immediately after the first sentence mid-word ('identified wit').",
+      "chunk_id_B": "rfc9457_p04_c02",
+      "score_B": 2,
+      "chunk_id_C": "rfc9457_p04_c02",
+      "score_C": 2,
+      "rationale_BC": "Starts cleanly at Section 3 heading and retains full media-type definition and member walkthrough."
+    },
+    {
+      "position_id": "pos07",
+      "document_id": "rfc9457",
+      "page": 5,
+      "anchor_phrase": "When an API encounters multiple problems",
+      "chunk_id_A": "rfc9457_p05_c01",
+      "score_A": 1,
+      "rationale_A": "Includes core advice on multiple problems, but cuts mid-sentence on generic batch problem types.",
+      "chunk_id_B": "rfc9457_p05_c01",
+      "score_B": 2,
+      "chunk_id_C": "rfc9457_p05_c01",
+      "score_C": 2,
+      "rationale_BC": "Complete multi-paragraph guidance including Accept header note."
+    },
+    {
+      "position_id": "pos08",
+      "document_id": "rfc9309",
+      "page": 3,
+      "anchor_phrase": "2.1. Protocol Definition",
+      "chunk_id_A": "rfc9309_p03_c03",
+      "score_A": 1,
+      "rationale_A": "Starts mid-word ('own here.') with BCP 14 noise and cuts Section 2.1 Group definition mid-sentence.",
+      "chunk_id_B": "rfc9309_p03_c04",
+      "score_B": 2,
+      "chunk_id_C": "rfc9309_p03_c04",
+      "score_C": 2,
+      "rationale_BC": "Cleanly isolates Section 2.1 Protocol Definition with complete Rule and Group definitions."
+    },
+    {
+      "position_id": "pos09",
+      "document_id": "rfc9309",
+      "page": 4,
+      "anchor_phrase": "2.2.1. The User-Agent Line",
+      "chunk_id_A": "rfc9309_p04_c03",
+      "score_A": 0,
+      "rationale_A": "Dominated by preceding UTF-8 ABNF rules; cuts Section 2.2.1 mid-word ('uppercase and low') before explaining product tokens.",
+      "chunk_id_B": "rfc9309_p04_c03",
+      "score_B": 2,
+      "chunk_id_C": "rfc9309_p04_c03",
+      "score_C": 2,
+      "rationale_BC": "Starts cleanly at Section 2.2.1 heading and preserves the full product token specification."
+    },
+    {
+      "position_id": "pos10",
+      "document_id": "rfc9309",
+      "page": 5,
+      "anchor_phrase": "If there is more than one group matching",
+      "chunk_id_A": "rfc9309_p05_c01",
+      "score_A": 1,
+      "rationale_A": "Covers group merging and '*' fallback, then cuts off mid-sentence ('If no group matches the produ').",
+      "chunk_id_B": "rfc9309_p05_c01",
+      "score_B": 2,
+      "chunk_id_C": "rfc9309_p05_c01",
+      "score_C": 2,
+      "rationale_BC": "Keeps all three user-agent matching/merging/no-rules-apply cases complete."
+    }
+  ]
+}

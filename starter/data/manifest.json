@@ -1,0 +1,586 @@
+{
+  "corpus_title": "Web & HTTP API Standards Corpus (IETF RFC 9111, RFC 9457, RFC 9309)",
+  "theme": "Web & HTTP API Engineering Standards (HTTP Caching, Error Problem Details, Robots Exclusion)",
+  "total_documents": 3,
+  "total_physical_pages": 63,
+  "total_valid_content_pages": 45,
+  "total_valid_characters": 107375,
+  "page_counting_rule": "Count 1-indexed physical PDF pages that contain substantive technical specification or appendix content. Exclude cover/status/copyright pages, Table of Contents pages, pages containing only References, Acknowledgements, Index, or Authors Addresses.",
+  "metadata_fields_description": {
+    "document_id": "string - Unique identifier of the RFC document (rfc9111, rfc9457, rfc9309)",
+    "source": "string - Relative file path to the PDF",
+    "page": "integer - 1-indexed physical PDF page number",
+    "category": "string - Domain category filter (http_caching | http_error_handling | web_crawling)",
+    "year": "integer - Publication year verified from RFC header (2022 | 2023)",
+    "section": "string - Nearest/active top-level section heading detected on the page"
+  },
+  "documents": [
+    {
+      "source_id": "rfc9111",
+      "title": "RFC 9111: HTTP Caching",
+      "source_path": "starter/data/rfc9111_http_caching.pdf",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9111.pdf",
+      "license_or_permission": "IETF Trust Legal Provisions (TLP) - Public standard specification; redistribution in full permitted",
+      "snapshot_or_version": "RFC 9111 (STD 98), Published June 2022",
+      "accessed_at": "2026-11-13",
+      "metadata": {
+        "category": "http_caching",
+        "year": 2022,
+        "document_type": "ietf_standard",
+        "std_track": "Standards Track (STD 98)"
+      },
+      "physical_pages": 35,
+      "valid_content_page_count": 26,
+      "valid_page_ids": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "excluded_pages": [
+        {
+          "page": 1,
+          "reason": "Cover page, abstract, and status/copyright notice"
+        },
+        {
+          "page": 2,
+          "reason": "Copyright notice and start of Table of Contents"
+        },
+        {
+          "page": 3,
+          "reason": "Table of Contents"
+        },
+        {
+          "page": 4,
+          "reason": "Table of Contents"
+        },
+        {
+          "page": 31,
+          "reason": "References only (Section 9)"
+        },
+        {
+          "page": 32,
+          "reason": "References only (Section 9)"
+        },
+        {
+          "page": 33,
+          "reason": "Index"
+        },
+        {
+          "page": 34,
+          "reason": "Index"
+        },
+        {
+          "page": 35,
+          "reason": "Index and Authors Addresses"
+        }
+      ],
+      "total_valid_chars": 65983,
+      "page_stats": [
+        {
+          "page": 1,
+          "included": false,
+          "normalized_char_count": 1817,
+          "reason": "Cover page, abstract, and status/copyright notice"
+        },
+        {
+          "page": 2,
+          "included": false,
+          "normalized_char_count": 1485,
+          "reason": "Copyright notice and start of Table of Contents"
+        },
+        {
+          "page": 3,
+          "included": false,
+          "normalized_char_count": 788,
+          "reason": "Table of Contents"
+        },
+        {
+          "page": 4,
+          "included": false,
+          "normalized_char_count": 1353,
+          "reason": "Table of Contents"
+        },
+        {
+          "page": 5,
+          "included": true,
+          "normalized_char_count": 2390,
+          "reason": null
+        },
+        {
+          "page": 6,
+          "included": true,
+          "normalized_char_count": 2693,
+          "reason": null
+        },
+        {
+          "page": 7,
+          "included": true,
+          "normalized_char_count": 2619,
+          "reason": null
+        },
+        {
+          "page": 8,
+          "included": true,
+          "normalized_char_count": 2573,
+          "reason": null
+        },
+        {
+          "page": 9,
+          "included": true,
+          "normalized_char_count": 2884,
+          "reason": null
+        },
+        {
+          "page": 10,
+          "included": true,
+          "normalized_char_count": 2687,
+          "reason": null
+        },
+        {
+          "page": 11,
+          "included": true,
+          "normalized_char_count": 2957,
+          "reason": null
+        },
+        {
+          "page": 12,
+          "included": true,
+          "normalized_char_count": 2771,
+          "reason": null
+        },
+        {
+          "page": 13,
+          "included": true,
+          "normalized_char_count": 2842,
+          "reason": null
+        },
+        {
+          "page": 14,
+          "included": true,
+          "normalized_char_count": 2426,
+          "reason": null
+        },
+        {
+          "page": 15,
+          "included": true,
+          "normalized_char_count": 2517,
+          "reason": null
+        },
+        {
+          "page": 16,
+          "included": true,
+          "normalized_char_count": 2992,
+          "reason": null
+        },
+        {
+          "page": 17,
+          "included": true,
+          "normalized_char_count": 3204,
+          "reason": null
+        },
+        {
+          "page": 18,
+          "included": true,
+          "normalized_char_count": 2908,
+          "reason": null
+        },
+        {
+          "page": 19,
+          "included": true,
+          "normalized_char_count": 2641,
+          "reason": null
+        },
+        {
+          "page": 20,
+          "included": true,
+          "normalized_char_count": 2110,
+          "reason": null
+        },
+        {
+          "page": 21,
+          "included": true,
+          "normalized_char_count": 2267,
+          "reason": null
+        },
+        {
+          "page": 22,
+          "included": true,
+          "normalized_char_count": 2346,
+          "reason": null
+        },
+        {
+          "page": 23,
+          "included": true,
+          "normalized_char_count": 2552,
+          "reason": null
+        },
+        {
+          "page": 24,
+          "included": true,
+          "normalized_char_count": 2398,
+          "reason": null
+        },
+        {
+          "page": 25,
+          "included": true,
+          "normalized_char_count": 2580,
+          "reason": null
+        },
+        {
+          "page": 26,
+          "included": true,
+          "normalized_char_count": 2424,
+          "reason": null
+        },
+        {
+          "page": 27,
+          "included": true,
+          "normalized_char_count": 2250,
+          "reason": null
+        },
+        {
+          "page": 28,
+          "included": true,
+          "normalized_char_count": 2749,
+          "reason": null
+        },
+        {
+          "page": 29,
+          "included": true,
+          "normalized_char_count": 2346,
+          "reason": null
+        },
+        {
+          "page": 30,
+          "included": true,
+          "normalized_char_count": 857,
+          "reason": null
+        },
+        {
+          "page": 31,
+          "included": false,
+          "normalized_char_count": 1987,
+          "reason": "References only (Section 9)"
+        },
+        {
+          "page": 32,
+          "included": false,
+          "normalized_char_count": 1737,
+          "reason": "References only (Section 9)"
+        },
+        {
+          "page": 33,
+          "included": false,
+          "normalized_char_count": 1536,
+          "reason": "Index"
+        },
+        {
+          "page": 34,
+          "included": false,
+          "normalized_char_count": 1140,
+          "reason": "Index"
+        },
+        {
+          "page": 35,
+          "included": false,
+          "normalized_char_count": 727,
+          "reason": "Index and Authors Addresses"
+        }
+      ]
+    },
+    {
+      "source_id": "rfc9457",
+      "title": "RFC 9457: Problem Details for HTTP APIs",
+      "source_path": "starter/data/rfc9457_http_problem_details.pdf",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9457.pdf",
+      "license_or_permission": "IETF Trust Legal Provisions (TLP) - Public standard specification; redistribution in full permitted",
+      "snapshot_or_version": "RFC 9457 (Obsoletes RFC 7807), Published July 2023",
+      "accessed_at": "2026-11-13",
+      "metadata": {
+        "category": "http_error_handling",
+        "year": 2023,
+        "document_type": "ietf_standard",
+        "std_track": "Standards Track"
+      },
+      "physical_pages": 16,
+      "valid_content_page_count": 11,
+      "valid_page_ids": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        13,
+        14,
+        15
+      ],
+      "excluded_pages": [
+        {
+          "page": 1,
+          "reason": "Cover page, abstract, and status/copyright notice"
+        },
+        {
+          "page": 2,
+          "reason": "Table of Contents"
+        },
+        {
+          "page": 11,
+          "reason": "References only (Section 7)"
+        },
+        {
+          "page": 12,
+          "reason": "References only (Section 7)"
+        },
+        {
+          "page": 16,
+          "reason": "Acknowledgements and Authors Addresses"
+        }
+      ],
+      "total_valid_chars": 24467,
+      "page_stats": [
+        {
+          "page": 1,
+          "included": false,
+          "normalized_char_count": 1688,
+          "reason": "Cover page, abstract, and status/copyright notice"
+        },
+        {
+          "page": 2,
+          "included": false,
+          "normalized_char_count": 822,
+          "reason": "Table of Contents"
+        },
+        {
+          "page": 3,
+          "included": true,
+          "normalized_char_count": 3266,
+          "reason": null
+        },
+        {
+          "page": 4,
+          "included": true,
+          "normalized_char_count": 1646,
+          "reason": null
+        },
+        {
+          "page": 5,
+          "included": true,
+          "normalized_char_count": 1620,
+          "reason": null
+        },
+        {
+          "page": 6,
+          "included": true,
+          "normalized_char_count": 2668,
+          "reason": null
+        },
+        {
+          "page": 7,
+          "included": true,
+          "normalized_char_count": 2610,
+          "reason": null
+        },
+        {
+          "page": 8,
+          "included": true,
+          "normalized_char_count": 2538,
+          "reason": null
+        },
+        {
+          "page": 9,
+          "included": true,
+          "normalized_char_count": 2487,
+          "reason": null
+        },
+        {
+          "page": 10,
+          "included": true,
+          "normalized_char_count": 2157,
+          "reason": null
+        },
+        {
+          "page": 11,
+          "included": false,
+          "normalized_char_count": 2361,
+          "reason": "References only (Section 7)"
+        },
+        {
+          "page": 12,
+          "included": false,
+          "normalized_char_count": 2437,
+          "reason": "References only (Section 7)"
+        },
+        {
+          "page": 13,
+          "included": true,
+          "normalized_char_count": 1239,
+          "reason": null
+        },
+        {
+          "page": 14,
+          "included": true,
+          "normalized_char_count": 2034,
+          "reason": null
+        },
+        {
+          "page": 15,
+          "included": true,
+          "normalized_char_count": 2202,
+          "reason": null
+        },
+        {
+          "page": 16,
+          "included": false,
+          "normalized_char_count": 607,
+          "reason": "Acknowledgements and Authors Addresses"
+        }
+      ]
+    },
+    {
+      "source_id": "rfc9309",
+      "title": "RFC 9309: Robots Exclusion Protocol",
+      "source_path": "starter/data/rfc9309_robots_exclusion.pdf",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9309.pdf",
+      "license_or_permission": "IETF Trust Legal Provisions (TLP) - Public standard specification; redistribution in full permitted",
+      "snapshot_or_version": "RFC 9309, Published September 2022",
+      "accessed_at": "2026-11-13",
+      "metadata": {
+        "category": "web_crawling",
+        "year": 2022,
+        "document_type": "ietf_standard",
+        "std_track": "Standards Track"
+      },
+      "physical_pages": 12,
+      "valid_content_page_count": 8,
+      "valid_page_ids": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "excluded_pages": [
+        {
+          "page": 1,
+          "reason": "Cover page, abstract, and status/copyright notice"
+        },
+        {
+          "page": 2,
+          "reason": "Table of Contents"
+        },
+        {
+          "page": 11,
+          "reason": "References only (Section 6)"
+        },
+        {
+          "page": 12,
+          "reason": "Authors Addresses"
+        }
+      ],
+      "total_valid_chars": 16925,
+      "page_stats": [
+        {
+          "page": 1,
+          "included": false,
+          "normalized_char_count": 1875,
+          "reason": "Cover page, abstract, and status/copyright notice"
+        },
+        {
+          "page": 2,
+          "included": false,
+          "normalized_char_count": 740,
+          "reason": "Table of Contents"
+        },
+        {
+          "page": 3,
+          "included": true,
+          "normalized_char_count": 1755,
+          "reason": null
+        },
+        {
+          "page": 4,
+          "included": true,
+          "normalized_char_count": 2145,
+          "reason": null
+        },
+        {
+          "page": 5,
+          "included": true,
+          "normalized_char_count": 2335,
+          "reason": null
+        },
+        {
+          "page": 6,
+          "included": true,
+          "normalized_char_count": 2717,
+          "reason": null
+        },
+        {
+          "page": 7,
+          "included": true,
+          "normalized_char_count": 2180,
+          "reason": null
+        },
+        {
+          "page": 8,
+          "included": true,
+          "normalized_char_count": 2100,
+          "reason": null
+        },
+        {
+          "page": 9,
+          "included": true,
+          "normalized_char_count": 1957,
+          "reason": null
+        },
+        {
+          "page": 10,
+          "included": true,
+          "normalized_char_count": 1736,
+          "reason": null
+        },
+        {
+          "page": 11,
+          "included": false,
+          "normalized_char_count": 2164,
+          "reason": "References only (Section 6)"
+        },
+        {
+          "page": 12,
+          "included": false,
+          "normalized_char_count": 570,
+          "reason": "Authors Addresses"
+        }
+      ]
+    }
+  ]
+}

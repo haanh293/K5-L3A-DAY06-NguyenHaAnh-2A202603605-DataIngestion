@@ -1,0 +1,16 @@
+question_id,split,type,strategy,score,evidence_chunks,rationale
+q16,test,truc_tiep,A,0,"rfc9111_p08_c05, rfc9111_p10_c01, rfc9111_p10_c02",None of top-3 mention Set-Cookie (gold is rfc9111 p.29 Section 7.3).
+q17,test,dieu_kien_ngoai_le,A,1,"rfc9111_p07_c03, rfc9111_p23_c01, rfc9111_p28_c03",Rank 2 (rfc9111_p23_c01) starts Section 5.2.2.3 must-understand but truncates at 'no-store dire' before stating the ignore condition.
+q18,test,dien_dat_lai,A,1,"rfc9457_p08_c05, rfc9457_p10_c04, rfc9457_p07_c04",Rank 2 (rfc9457_p10_c04) states general information leakage risks but cuts off before the specific stack-dump / occurrence-link advice.
+q19,test,metadata_filter,A,2,"rfc9309_p08_c02, rfc9309_p08_c01, rfc9309_p09_c01",Rank 1 (rfc9309_p08_c02) contains the full 5-redirect requirement and unavailable fallback rule with exact source/page.
+q20,test,metadata_filter,A,2,"rfc9457_p08_c01, rfc9457_p08_c02, rfc9457_p07_c03",Rank 2 (rfc9457_p08_c02) states clients ignore unrecognized extensions and includes traceability to rfc9457 p.8.
+q16,test,truc_tiep,B,2,"rfc9111_p29_c03, rfc9111_p08_c04, rfc9111_p10_c01",Rank 1 (rfc9111_p29_c03) keeps complete Section 7.3 note that Set-Cookie does not inhibit caching and servers should emit Cache-Control.
+q17,test,dieu_kien_ngoai_le,B,2,"rfc9111_p23_c01, rfc9111_p07_c02, rfc9111_p10_c02",Rank 1 (rfc9111_p23_c01) contains full Section 5.2.2.3 must-understand + no-store override condition.
+q18,test,dien_dat_lai,B,2,"rfc9457_p10_c03, rfc9457_p08_c04, rfc9457_p08_c03",Rank 1 (rfc9457_p10_c03) preserves entire Section 5 Security Considerations including avoiding stack dumps in occurrence links.
+q19,test,metadata_filter,B,2,"rfc9309_p08_c03, rfc9309_p09_c03, rfc9309_p08_c02","Rank 1 (rfc9309_p08_c03) keeps complete Section 2.3.1.2 Redirects paragraph (at least 5 redirects, unavailable after >5)."
+q20,test,metadata_filter,B,2,"rfc9457_p08_c01, rfc9457_p07_c02, rfc9457_p08_c04",Rank 1 (rfc9457_p08_c01) keeps complete Section 3.2 Extension Members including ignore-unknown-extensions rule.
+q16,test,truc_tiep,C,2,"rfc9111_p29_c03, rfc9111_p08_c04, rfc9111_p10_c01",Identical to B at Rank 1; full Set-Cookie caching evidence with verified source/page.
+q17,test,dieu_kien_ngoai_le,C,2,"rfc9111_p23_c01, rfc9111_p07_c02, rfc9111_p10_c02",Identical to B at Rank 1; full must-understand/no-store interaction rule.
+q18,test,dien_dat_lai,C,2,"rfc9457_p10_c03, rfc9457_p08_c04, rfc9457_p08_c03",Identical to B at Rank 1; complete stack-dump avoidance guidance.
+q19,test,metadata_filter,C,2,"rfc9309_p08_c03, rfc9309_p09_c03, rfc9309_p08_c02",Rank 1 gives full redirect rule with category='web_crawling' SQL filter enforced across all top-3.
+q20,test,metadata_filter,C,2,"rfc9457_p08_c01, rfc9457_p07_c02, rfc9457_p08_c04","Rank 1 gives full extension handling rule with category='http_error_handling', year=2023 SQL filter enforced."

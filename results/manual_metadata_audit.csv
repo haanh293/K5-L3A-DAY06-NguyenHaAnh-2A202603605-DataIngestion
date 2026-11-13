@@ -1,0 +1,46 @@
+strategy,question_id,rank,chunk_id,document_id,source,page,category,year,section,complete_and_accurate,question_filter,filter_compliant
+A,q16,1,rfc9111_p08_c05,rfc9111,starter/data/rfc9111_http_caching.pdf,8,http_caching,2022,3.1. Storing Header and Trailer Fields,True,None,N/A
+A,q16,2,rfc9111_p10_c01,rfc9111,starter/data/rfc9111_http_caching.pdf,10,http_caching,2022,3.5. Storing Responses to Authenticated Requests,True,None,N/A
+A,q16,3,rfc9111_p10_c02,rfc9111,starter/data/rfc9111_http_caching.pdf,10,http_caching,2022,3.5. Storing Responses to Authenticated Requests,True,None,N/A
+A,q17,1,rfc9111_p07_c03,rfc9111,starter/data/rfc9111_http_caching.pdf,7,http_caching,2022,3. Storing Responses in Caches,True,None,N/A
+A,q17,2,rfc9111_p23_c01,rfc9111,starter/data/rfc9111_http_caching.pdf,23,http_caching,2022,5.2.2. Response Directives,True,None,N/A
+A,q17,3,rfc9111_p28_c03,rfc9111,starter/data/rfc9111_http_caching.pdf,28,http_caching,2022,6. Relationship to Applications and Other Caches,True,None,N/A
+A,q18,1,rfc9457_p08_c05,rfc9457,starter/data/rfc9457_http_problem_details.pdf,8,http_error_handling,2023,3.2. Extension Members,True,None,N/A
+A,q18,2,rfc9457_p10_c04,rfc9457,starter/data/rfc9457_http_problem_details.pdf,10,http_error_handling,2023,5. Security Considerations,True,None,N/A
+A,q18,3,rfc9457_p07_c04,rfc9457,starter/data/rfc9457_http_problem_details.pdf,7,http_error_handling,2023,"3.1.3. ""title""",True,None,N/A
+A,q19,1,rfc9309_p08_c02,rfc9309,starter/data/rfc9309_robots_exclusion.pdf,8,web_crawling,2022,2.3.1. Access Results,True,"{""category"": ""web_crawling""}",True
+A,q19,2,rfc9309_p08_c01,rfc9309,starter/data/rfc9309_robots_exclusion.pdf,8,web_crawling,2022,2.3.1. Access Results,True,"{""category"": ""web_crawling""}",True
+A,q19,3,rfc9309_p09_c01,rfc9309,starter/data/rfc9309_robots_exclusion.pdf,9,web_crawling,2022,2.4. Caching,True,"{""category"": ""web_crawling""}",True
+A,q20,1,rfc9457_p08_c01,rfc9457,starter/data/rfc9457_http_problem_details.pdf,8,http_error_handling,2023,3.2. Extension Members,True,"{""category"": ""http_error_handling"", ""year"": 2023}",True
+A,q20,2,rfc9457_p08_c02,rfc9457,starter/data/rfc9457_http_problem_details.pdf,8,http_error_handling,2023,3.2. Extension Members,True,"{""category"": ""http_error_handling"", ""year"": 2023}",True
+A,q20,3,rfc9457_p07_c03,rfc9457,starter/data/rfc9457_http_problem_details.pdf,7,http_error_handling,2023,"3.1.3. ""title""",True,"{""category"": ""http_error_handling"", ""year"": 2023}",True
+B,q16,1,rfc9111_p29_c03,rfc9111,starter/data/rfc9111_http_caching.pdf,29,http_caching,2022,7.3. Caching of Sensitive Information,True,None,N/A
+B,q16,2,rfc9111_p08_c04,rfc9111,starter/data/rfc9111_http_caching.pdf,8,http_caching,2022,3.2. Updating Stored Header Fields,True,None,N/A
+B,q16,3,rfc9111_p10_c01,rfc9111,starter/data/rfc9111_http_caching.pdf,10,http_caching,2022,3.5. Storing Responses to Authenticated Requests,True,None,N/A
+B,q17,1,rfc9111_p23_c01,rfc9111,starter/data/rfc9111_http_caching.pdf,23,http_caching,2022,5.2.2. Response Directives,True,None,N/A
+B,q17,2,rfc9111_p07_c02,rfc9111,starter/data/rfc9111_http_caching.pdf,7,http_caching,2022,3. Storing Responses in Caches,True,None,N/A
+B,q17,3,rfc9111_p10_c02,rfc9111,starter/data/rfc9111_http_caching.pdf,10,http_caching,2022,4. Constructing Responses from Caches,True,None,N/A
+B,q18,1,rfc9457_p10_c03,rfc9457,starter/data/rfc9457_http_problem_details.pdf,10,http_error_handling,2023,5. Security Considerations,True,None,N/A
+B,q18,2,rfc9457_p08_c04,rfc9457,starter/data/rfc9457_http_problem_details.pdf,8,http_error_handling,2023,4. Defining New Problem Types,True,None,N/A
+B,q18,3,rfc9457_p08_c03,rfc9457,starter/data/rfc9457_http_problem_details.pdf,8,http_error_handling,2023,4. Defining New Problem Types,True,None,N/A
+B,q19,1,rfc9309_p08_c03,rfc9309,starter/data/rfc9309_robots_exclusion.pdf,8,web_crawling,2022,2.3.1.2. Redirects,True,"{""category"": ""web_crawling""}",True
+B,q19,2,rfc9309_p09_c03,rfc9309,starter/data/rfc9309_robots_exclusion.pdf,9,web_crawling,2022,3. Security Considerations,True,"{""category"": ""web_crawling""}",True
+B,q19,3,rfc9309_p08_c02,rfc9309,starter/data/rfc9309_robots_exclusion.pdf,8,web_crawling,2022,2.3.1.1. Successful Access,True,"{""category"": ""web_crawling""}",True
+B,q20,1,rfc9457_p08_c01,rfc9457,starter/data/rfc9457_http_problem_details.pdf,8,http_error_handling,2023,3.2. Extension Members,True,"{""category"": ""http_error_handling"", ""year"": 2023}",True
+B,q20,2,rfc9457_p07_c02,rfc9457,starter/data/rfc9457_http_problem_details.pdf,7,http_error_handling,2023,"3.1.4. ""detail""",True,"{""category"": ""http_error_handling"", ""year"": 2023}",True
+B,q20,3,rfc9457_p08_c04,rfc9457,starter/data/rfc9457_http_problem_details.pdf,8,http_error_handling,2023,4. Defining New Problem Types,True,"{""category"": ""http_error_handling"", ""year"": 2023}",True
+C,q16,1,rfc9111_p29_c03,rfc9111,starter/data/rfc9111_http_caching.pdf,29,http_caching,2022,7.3. Caching of Sensitive Information,True,None,N/A
+C,q16,2,rfc9111_p08_c04,rfc9111,starter/data/rfc9111_http_caching.pdf,8,http_caching,2022,3.2. Updating Stored Header Fields,True,None,N/A
+C,q16,3,rfc9111_p10_c01,rfc9111,starter/data/rfc9111_http_caching.pdf,10,http_caching,2022,3.5. Storing Responses to Authenticated Requests,True,None,N/A
+C,q17,1,rfc9111_p23_c01,rfc9111,starter/data/rfc9111_http_caching.pdf,23,http_caching,2022,5.2.2. Response Directives,True,None,N/A
+C,q17,2,rfc9111_p07_c02,rfc9111,starter/data/rfc9111_http_caching.pdf,7,http_caching,2022,3. Storing Responses in Caches,True,None,N/A
+C,q17,3,rfc9111_p10_c02,rfc9111,starter/data/rfc9111_http_caching.pdf,10,http_caching,2022,4. Constructing Responses from Caches,True,None,N/A
+C,q18,1,rfc9457_p10_c03,rfc9457,starter/data/rfc9457_http_problem_details.pdf,10,http_error_handling,2023,5. Security Considerations,True,None,N/A
+C,q18,2,rfc9457_p08_c04,rfc9457,starter/data/rfc9457_http_problem_details.pdf,8,http_error_handling,2023,4. Defining New Problem Types,True,None,N/A
+C,q18,3,rfc9457_p08_c03,rfc9457,starter/data/rfc9457_http_problem_details.pdf,8,http_error_handling,2023,4. Defining New Problem Types,True,None,N/A
+C,q19,1,rfc9309_p08_c03,rfc9309,starter/data/rfc9309_robots_exclusion.pdf,8,web_crawling,2022,2.3.1.2. Redirects,True,"{""category"": ""web_crawling""}",True
+C,q19,2,rfc9309_p09_c03,rfc9309,starter/data/rfc9309_robots_exclusion.pdf,9,web_crawling,2022,3. Security Considerations,True,"{""category"": ""web_crawling""}",True
+C,q19,3,rfc9309_p08_c02,rfc9309,starter/data/rfc9309_robots_exclusion.pdf,8,web_crawling,2022,2.3.1.1. Successful Access,True,"{""category"": ""web_crawling""}",True
+C,q20,1,rfc9457_p08_c01,rfc9457,starter/data/rfc9457_http_problem_details.pdf,8,http_error_handling,2023,3.2. Extension Members,True,"{""category"": ""http_error_handling"", ""year"": 2023}",True
+C,q20,2,rfc9457_p07_c02,rfc9457,starter/data/rfc9457_http_problem_details.pdf,7,http_error_handling,2023,"3.1.4. ""detail""",True,"{""category"": ""http_error_handling"", ""year"": 2023}",True
+C,q20,3,rfc9457_p08_c04,rfc9457,starter/data/rfc9457_http_problem_details.pdf,8,http_error_handling,2023,4. Defining New Problem Types,True,"{""category"": ""http_error_handling"", ""year"": 2023}",True

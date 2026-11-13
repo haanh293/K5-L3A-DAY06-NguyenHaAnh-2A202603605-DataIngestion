@@ -1,0 +1,488 @@
+[
+  {
+    "document_id": "rfc9111",
+    "page": 1,
+    "status": "excluded_by_manifest",
+    "raw_chars": 1822,
+    "normalized_chars": 1776
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 2,
+    "status": "excluded_by_manifest",
+    "raw_chars": 1485,
+    "normalized_chars": 1392
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 3,
+    "status": "excluded_by_manifest",
+    "raw_chars": 788,
+    "normalized_chars": 688
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 4,
+    "status": "excluded_by_manifest",
+    "raw_chars": 1354,
+    "normalized_chars": 1267
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 5,
+    "status": "ingested",
+    "section": "1.1. Requirements Notation",
+    "raw_chars": 2422,
+    "normalized_chars": 2316
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 6,
+    "status": "ingested",
+    "section": "1.2.2. Delta Seconds",
+    "raw_chars": 2698,
+    "normalized_chars": 2627
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 7,
+    "status": "ingested",
+    "section": "3. Storing Responses in Caches",
+    "raw_chars": 2620,
+    "normalized_chars": 2534
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 8,
+    "status": "ingested",
+    "section": "3.1. Storing Header and Trailer Fields",
+    "raw_chars": 2581,
+    "normalized_chars": 2504
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 9,
+    "status": "ingested",
+    "section": "3.3. Storing Incomplete Responses",
+    "raw_chars": 2892,
+    "normalized_chars": 2825
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 10,
+    "status": "ingested",
+    "section": "3.5. Storing Responses to Authenticated Requests",
+    "raw_chars": 2691,
+    "normalized_chars": 2606
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 11,
+    "status": "ingested",
+    "section": "4.1. Calculating Cache Keys with the Vary Header Field",
+    "raw_chars": 2962,
+    "normalized_chars": 2904
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 12,
+    "status": "ingested",
+    "section": "4.1. Calculating Cache Keys with the Vary Header Field",
+    "raw_chars": 2776,
+    "normalized_chars": 2702
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 13,
+    "status": "ingested",
+    "section": "4.2.1. Calculating Freshness Lifetime",
+    "raw_chars": 2845,
+    "normalized_chars": 2771
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 14,
+    "status": "ingested",
+    "section": "4.2.3. Calculating Age",
+    "raw_chars": 2428,
+    "normalized_chars": 2347
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 15,
+    "status": "ingested",
+    "section": "4.2.4. Serving Stale Responses",
+    "raw_chars": 2526,
+    "normalized_chars": 2440
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 16,
+    "status": "ingested",
+    "section": "4.3.2. Handling a Received Validation Request",
+    "raw_chars": 2993,
+    "normalized_chars": 2935
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 17,
+    "status": "ingested",
+    "section": "4.3.3. Handling a Validation Response",
+    "raw_chars": 3212,
+    "normalized_chars": 3151
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 18,
+    "status": "ingested",
+    "section": "4.3.4. Freshening Stored Responses upon Validation",
+    "raw_chars": 2911,
+    "normalized_chars": 2842
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 19,
+    "status": "ingested",
+    "section": "4.4. Invalidating Stored Responses",
+    "raw_chars": 2646,
+    "normalized_chars": 2573
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 20,
+    "status": "ingested",
+    "section": "5.2. Cache-Control",
+    "raw_chars": 2119,
+    "normalized_chars": 2052
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 21,
+    "status": "ingested",
+    "section": "5.2. Cache-Control",
+    "raw_chars": 2273,
+    "normalized_chars": 2192
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 22,
+    "status": "ingested",
+    "section": "5.2.2. Response Directives",
+    "raw_chars": 2352,
+    "normalized_chars": 2276
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 23,
+    "status": "ingested",
+    "section": "5.2.2. Response Directives",
+    "raw_chars": 2559,
+    "normalized_chars": 2491
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 24,
+    "status": "ingested",
+    "section": "5.2.2. Response Directives",
+    "raw_chars": 2403,
+    "normalized_chars": 2336
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 25,
+    "status": "ingested",
+    "section": "5.2.3. Extension Directives",
+    "raw_chars": 2585,
+    "normalized_chars": 2512
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 26,
+    "status": "ingested",
+    "section": "5.2.4. Cache Directive Registry",
+    "raw_chars": 2425,
+    "normalized_chars": 2348
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 27,
+    "status": "ingested",
+    "section": "5.4. Pragma",
+    "raw_chars": 2255,
+    "normalized_chars": 2193
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 28,
+    "status": "ingested",
+    "section": "6. Relationship to Applications and Other Caches",
+    "raw_chars": 2749,
+    "normalized_chars": 2679
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 29,
+    "status": "ingested",
+    "section": "7.1. Cache Poisoning",
+    "raw_chars": 2348,
+    "normalized_chars": 2279
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 30,
+    "status": "ingested",
+    "section": "8.2. Cache Directive Registration",
+    "raw_chars": 857,
+    "normalized_chars": 763
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 31,
+    "status": "excluded_by_manifest",
+    "raw_chars": 1988,
+    "normalized_chars": 1890
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 32,
+    "status": "excluded_by_manifest",
+    "raw_chars": 1737,
+    "normalized_chars": 1662
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 33,
+    "status": "excluded_by_manifest",
+    "raw_chars": 1536,
+    "normalized_chars": 1466
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 34,
+    "status": "excluded_by_manifest",
+    "raw_chars": 1140,
+    "normalized_chars": 1066
+  },
+  {
+    "document_id": "rfc9111",
+    "page": 35,
+    "status": "excluded_by_manifest",
+    "raw_chars": 728,
+    "normalized_chars": 649
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 1,
+    "status": "excluded_by_manifest",
+    "raw_chars": 1690,
+    "normalized_chars": 1641
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 2,
+    "status": "excluded_by_manifest",
+    "raw_chars": 822,
+    "normalized_chars": 707
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 3,
+    "status": "ingested",
+    "section": "1. Introduction",
+    "raw_chars": 3268,
+    "normalized_chars": 3172
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 4,
+    "status": "ingested",
+    "section": "2. Requirements Language",
+    "raw_chars": 1664,
+    "normalized_chars": 1544
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 5,
+    "status": "ingested",
+    "section": "3.1. Members of a Problem Details Object",
+    "raw_chars": 1740,
+    "normalized_chars": 1510
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 6,
+    "status": "ingested",
+    "section": "3.1.1. \"type\"",
+    "raw_chars": 2674,
+    "normalized_chars": 2573
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 7,
+    "status": "ingested",
+    "section": "3.1.3. \"title\"",
+    "raw_chars": 2613,
+    "normalized_chars": 2515
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 8,
+    "status": "ingested",
+    "section": "3.2. Extension Members",
+    "raw_chars": 2541,
+    "normalized_chars": 2442
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 9,
+    "status": "ingested",
+    "section": "4.1. Example",
+    "raw_chars": 2495,
+    "normalized_chars": 2389
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 10,
+    "status": "ingested",
+    "section": "5. Security Considerations",
+    "raw_chars": 2161,
+    "normalized_chars": 2055
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 11,
+    "status": "excluded_by_manifest",
+    "raw_chars": 2361,
+    "normalized_chars": 2245
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 12,
+    "status": "excluded_by_manifest",
+    "raw_chars": 2438,
+    "normalized_chars": 2314
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 13,
+    "status": "ingested",
+    "section": "Appendix B. HTTP Problems and XML",
+    "raw_chars": 1346,
+    "normalized_chars": 1117
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 14,
+    "status": "ingested",
+    "section": "Appendix B. HTTP Problems and XML",
+    "raw_chars": 2175,
+    "normalized_chars": 1919
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 15,
+    "status": "ingested",
+    "section": "Appendix C. Using Problem Details with Other Formats",
+    "raw_chars": 2232,
+    "normalized_chars": 2093
+  },
+  {
+    "document_id": "rfc9457",
+    "page": 16,
+    "status": "excluded_by_manifest",
+    "raw_chars": 608,
+    "normalized_chars": 506
+  },
+  {
+    "document_id": "rfc9309",
+    "page": 1,
+    "status": "excluded_by_manifest",
+    "raw_chars": 1878,
+    "normalized_chars": 1833
+  },
+  {
+    "document_id": "rfc9309",
+    "page": 2,
+    "status": "excluded_by_manifest",
+    "raw_chars": 740,
+    "normalized_chars": 619
+  },
+  {
+    "document_id": "rfc9309",
+    "page": 3,
+    "status": "ingested",
+    "section": "1. Introduction",
+    "raw_chars": 1757,
+    "normalized_chars": 1653
+  },
+  {
+    "document_id": "rfc9309",
+    "page": 4,
+    "status": "ingested",
+    "section": "2.2.1. The User-Agent Line",
+    "raw_chars": 2389,
+    "normalized_chars": 2017
+  },
+  {
+    "document_id": "rfc9309",
+    "page": 5,
+    "status": "ingested",
+    "section": "2.2.1. The User-Agent Line",
+    "raw_chars": 2997,
+    "normalized_chars": 2238
+  },
+  {
+    "document_id": "rfc9309",
+    "page": 6,
+    "status": "ingested",
+    "section": "2.2.2. The \"Allow\" and \"Disallow\" Lines",
+    "raw_chars": 2984,
+    "normalized_chars": 2616
+  },
+  {
+    "document_id": "rfc9309",
+    "page": 7,
+    "status": "ingested",
+    "section": "2.2.3. Special Characters",
+    "raw_chars": 2597,
+    "normalized_chars": 2080
+  },
+  {
+    "document_id": "rfc9309",
+    "page": 8,
+    "status": "ingested",
+    "section": "2.3.1. Access Results",
+    "raw_chars": 2127,
+    "normalized_chars": 1998
+  },
+  {
+    "document_id": "rfc9309",
+    "page": 9,
+    "status": "ingested",
+    "section": "2.4. Caching",
+    "raw_chars": 1961,
+    "normalized_chars": 1851
+  },
+  {
+    "document_id": "rfc9309",
+    "page": 10,
+    "status": "ingested",
+    "section": "6. References",
+    "raw_chars": 1913,
+    "normalized_chars": 1618
+  },
+  {
+    "document_id": "rfc9309",
+    "page": 11,
+    "status": "excluded_by_manifest",
+    "raw_chars": 2164,
+    "normalized_chars": 2034
+  },
+  {
+    "document_id": "rfc9309",
+    "page": 12,
+    "status": "excluded_by_manifest",
+    "raw_chars": 576,
+    "normalized_chars": 470
+  }
+]

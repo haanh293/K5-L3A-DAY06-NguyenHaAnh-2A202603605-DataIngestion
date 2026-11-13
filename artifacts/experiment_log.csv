@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size,500,50,"document_id,source,page,category,year,section",none,sentence-transformers/all-MiniLM-L6-v2 (384d),"Baseline: fixed windows may cut rules mid-sentence and lower Hit@3/coherence",5/15,7/15,1/5,2/5,"249 chunks; mean_len=456.7; ingest=3.692s; dev_filter_ok=2/3; test_filter_ok=2/2; cost=$0"
+B,by_paragraph,900,0,"document_id,source,page,category,year,section",none,sentence-transformers/all-MiniLM-L6-v2 (384d),"Structure/paragraph chunking preserves full rules and raises Hit@1, Hit@3, and coherence",12/15,12/15,5/5,5/5,"179 chunks; mean_len=578.0; ingest=3.158s; dev_filter_ok=2/3 (q13 leaked rfc9111); test_filter_ok=2/2; cost=$0"
+C,by_paragraph,900,0,"document_id,source,page,category,year,section","SQL WHERE on category/year when query has filter",sentence-transformers/all-MiniLM-L6-v2 (384d),"Identical chunks to B; adding SQL metadata filter guarantees 100% filter compliance and removes cross-RFC noise",12/15,12/15,5/5,5/5,"179 chunks; mean_len=578.0; ingest=3.146s; dev_filter_ok=3/3; test_filter_ok=2/2; cost=$0"

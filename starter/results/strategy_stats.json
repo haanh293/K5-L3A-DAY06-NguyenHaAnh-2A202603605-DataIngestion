@@ -1,0 +1,90 @@
+{
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "dimensions": 384,
+  "vector_store": "PostgreSQL 16 + pgvector 0.8.7 (exact cosine distance <=>)",
+  "cost_usd": 0.0,
+  "valid_pages_ingested": 45,
+  "strategies": {
+    "A": {
+      "chunk_count": 249,
+      "min_chars": 51,
+      "mean_chars": 456.69,
+      "median_chars": 500,
+      "p95_chars": 500,
+      "max_chars": 500,
+      "total_chars": 113715,
+      "approx_tokens": 28429,
+      "description": "Fixed-size chunking (size=500, overlap=50), no metadata filtering",
+      "use_filter": false,
+      "embed_seconds": 3.464,
+      "upsert_seconds": 0.257,
+      "total_ingest_seconds": 3.721,
+      "first_upsert": {
+        "upserted": 249,
+        "deleted_obsolete": 0
+      },
+      "reingest_upsert": {
+        "upserted": 249,
+        "deleted_obsolete": 0
+      },
+      "db_count_after_first": 249,
+      "db_count_after_reingest": 249,
+      "idempotent_no_duplicates": true,
+      "query_seconds_20q": 0.515
+    },
+    "B": {
+      "chunk_count": 179,
+      "min_chars": 11,
+      "mean_chars": 578.02,
+      "median_chars": 631,
+      "p95_chars": 889,
+      "max_chars": 900,
+      "total_chars": 103466,
+      "approx_tokens": 25866,
+      "description": "Structure/paragraph-aware chunking (max_size=900), no metadata filtering",
+      "use_filter": false,
+      "embed_seconds": 3.064,
+      "upsert_seconds": 0.206,
+      "total_ingest_seconds": 3.27,
+      "first_upsert": {
+        "upserted": 179,
+        "deleted_obsolete": 0
+      },
+      "reingest_upsert": {
+        "upserted": 179,
+        "deleted_obsolete": 0
+      },
+      "db_count_after_first": 179,
+      "db_count_after_reingest": 179,
+      "idempotent_no_duplicates": true,
+      "query_seconds_20q": 0.55
+    },
+    "C": {
+      "chunk_count": 179,
+      "min_chars": 11,
+      "mean_chars": 578.02,
+      "median_chars": 631,
+      "p95_chars": 889,
+      "max_chars": 900,
+      "total_chars": 103466,
+      "approx_tokens": 25866,
+      "description": "Same chunking as B (max_size=900) + SQL metadata filter when query provides filter",
+      "use_filter": true,
+      "embed_seconds": 3.008,
+      "upsert_seconds": 0.199,
+      "total_ingest_seconds": 3.207,
+      "first_upsert": {
+        "upserted": 179,
+        "deleted_obsolete": 0
+      },
+      "reingest_upsert": {
+        "upserted": 179,
+        "deleted_obsolete": 0
+      },
+      "db_count_after_first": 179,
+      "db_count_after_reingest": 179,
+      "idempotent_no_duplicates": true,
+      "query_seconds_20q": 0.515
+    }
+  }
+}
